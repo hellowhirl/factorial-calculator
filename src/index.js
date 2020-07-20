@@ -9,4 +9,13 @@ function component() {
   return element;
 }
 
+function testing() {
+  const headerElement = document.getElementsByTagName("h1")[0];
+  headerElement.style.color = "red";
+}
+
+testing();
+
+console.log("testing");
+
 document.body.appendChild(component());
