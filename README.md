@@ -6,7 +6,7 @@ Example:
 
 Input: 6
 
-[ Get Factorial ]
+[ Calculate ]
 
 Formula:
 6! = 1 x 2 x 3 x 4 x 5 x 6
