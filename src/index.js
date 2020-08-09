@@ -1,6 +1,7 @@
 import _ from "lodash";
 import "bootstrap";
 // we didn't use export defualt so we need to use specific name in curly brackets
+import "./main.css";
 import { handleClick } from "./utils/handleClick";
 
 const node = document.getElementById("numberInput");
