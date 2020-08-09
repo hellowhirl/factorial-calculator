@@ -24,3 +24,15 @@ In the project directory, you can run:
 ### `npm run-script build`
 
 Builds the app for production to the `dist` folder.<br>
+
+## Notes about webpack
+
+Below settings along with setting will tell webpack to stop minimying our "main.js" file
+
+- `webpack --config webpack.config.js`
+- `mode: "development"`
+- `devtool: none`
+
+For hot reloading use:
+
+- `webpack-dev-server`
