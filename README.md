@@ -1,5 +1,7 @@
 # factorial-calculator
 
+## Summary
+
 Decimals will be rounded to the nearest integer
 
 Example:
@@ -14,3 +16,11 @@ Result:
 
 What is a factoriaL?
 -explanation
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run-script build`
+
+Builds the app for production to the `dist` folder.<br>
