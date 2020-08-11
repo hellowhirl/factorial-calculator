@@ -1,5 +1,12 @@
 import { calculateFactorial } from "./calculateFactorial";
 
+const node = document.getElementById("numberInput");
+node.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    handleClick();
+  }
+});
+
 export const handleClick = () => {
   const num = document.getElementById("numberInput").value;
   const integer = Math.round(num);

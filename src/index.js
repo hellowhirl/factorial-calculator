@@ -1,14 +1,8 @@
 import _ from "lodash";
-import "bootstrap";
 // we didn't use export defualt so we need to use specific name in curly brackets
 import "./main.css";
 import { handleClick } from "./utils/handleClick";
 
-const node = document.getElementById("numberInput");
-node.addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
-    handleClick();
-  }
-});
+const calculateButton = document.getElementById("calculate");
 
-document.getElementById("calculate").addEventListener("click", handleClick);
+calculateButton.addEventListener("click", handleClick);
