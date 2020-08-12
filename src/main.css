@@ -10,8 +10,16 @@ h1,
 h2 {
   margin-bottom: 0;
 }
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+
 .box {
-  width: 600px;
+  display: table;
+  /* width: 600px; */
+  /* max-width: 400px; */
   padding: 20px 10px;
   margin: 0 auto 20px;
   border: #f8feff 3px solid;
