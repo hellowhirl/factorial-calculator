@@ -9,10 +9,10 @@ body {
 }
 
 p,
+h1,
 h2,
 span,
 div {
-  margin-bottom: 0;
   font-family: "B612 Mono", monospace;
   font-size: 1.3rem;
 }
@@ -24,6 +24,7 @@ div {
 .box {
   display: table;
   min-width: 200px;
+  max-width: 500px;
   padding: 20px;
   margin: 0 auto 20px;
   border: #f8feff 3px solid;
