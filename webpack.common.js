@@ -10,7 +10,7 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: { minimize: true },
+            // options: { minimize: true },
           },
         ],
       },
@@ -21,6 +21,29 @@ module.exports = {
           "style-loader", // 3 inject styles into DOM
           "css-loader", // 2. turns css into CommonJS
           "sass-loader", // 1. turns sass into css
+        ],
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[hash].[ext]",
+              outputPath: "imgs",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.ttf$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: false,
+            },
+          },
         ],
       },
     ],
