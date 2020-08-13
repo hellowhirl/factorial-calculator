@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin"); // serve your webpack bundles (with hash file names)
 const path = require("path");
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
   // devtool: "none", // to clean up our main.js and make readable
   entry: "./src/index.js", // webpack behavior
   output: {
-    filename: "main.js", // this is also default webpack behavior
+    filename: "main.[hash].js", // this is also default webpack behavior
     path: path.resolve(__dirname, "dist"), // resolves an absolute path to the "dist" directory (not hard coded)
   },
   devServer: {
@@ -35,10 +35,11 @@ module.exports = {
       },
     ],
   },
+  // plugins is an array that contains as many plugins as we want
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./index.html",
-      filename: "./index.html",
+      template: "./src/template.html",
+      filename: "./index.html", // this is default name anyway
     }),
   ],
 };
