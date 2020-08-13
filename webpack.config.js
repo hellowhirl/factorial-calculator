@@ -25,8 +25,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"], // order is reversed here
+        test: /\.scss$/, // regex that catches any file ending in "scss"
+        // take not that order is reversed here
+        use: [
+          "style-loader", // 3 inject styles into DOM
+          "css-loader", // 2. turns css into CommonJS
+          "sass-loader", // 1. turns sass into css
+        ],
       },
     ],
   },

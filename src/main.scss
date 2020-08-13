@@ -1,4 +1,5 @@
-@import "~bootstrap";
+// overwrite classes for bootstrap above bootstrap import
+@import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&display=swap");
 
@@ -14,12 +15,7 @@ span,
 div {
   margin-bottom: 0;
   font-family: "B612 Mono", monospace;
-}
-
-h2,
-span,
-div {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -27,13 +23,8 @@ h1 {
   font-size: 2rem;
 }
 
-p {
-  font-size: 1.5rem;
-}
-
 .box {
   display: table;
-  /* width: 600px; */
   min-width: 200px;
   padding: 20px;
   margin: 0 auto 20px;
