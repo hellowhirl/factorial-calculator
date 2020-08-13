@@ -1,4 +1,6 @@
 @import "~bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
   background-color: #18191a;
@@ -7,23 +9,36 @@ body {
 
 p,
 h1,
-h2 {
+h2,
+span,
+div {
   margin-bottom: 0;
+  font-family: "VT323", monospace;
 }
 
 h1,
-h2 {
+h2,
+span,
+div {
   font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Eagle Lake", cursive;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 .box {
   display: table;
   /* width: 600px; */
-  /* max-width: 400px; */
+  min-width: 200px;
   padding: 20px 10px;
   margin: 0 auto 20px;
   border: #f8feff 3px solid;
   border-radius: 10px;
-  background-color: #2b0080;
+  background-color: #0a2d83;
   box-shadow: 0px 3px 5px #aaaaaa;
 }
