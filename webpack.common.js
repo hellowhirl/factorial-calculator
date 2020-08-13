@@ -2,17 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin"); // serve your webpack 
 const path = require("path");
 
 module.exports = {
-  mode: "development", // then we can read all our code in a readable bundle (not uglified)
-  // devtool: "none", // to clean up our main.js and make readable
-  entry: "./src/index.js", // webpack behavior
-  output: {
-    filename: "main.[hash].js", // this is also default webpack behavior
-    path: path.resolve(__dirname, "dist"), // resolves an absolute path to the "dist" directory (not hard coded)
-  },
-  devServer: {
-    open: true,
-    hot: true,
-  },
+  entry: "./src/index.js", // webpack default behavior
   module: {
     rules: [
       {
