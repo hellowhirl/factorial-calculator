@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/hellowhirl/factorial-calculator#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.1",
     "exports-loader": "^1.1.0",
     "file-loader": "^6.0.0",
