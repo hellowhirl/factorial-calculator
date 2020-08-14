@@ -11,49 +11,68 @@
     <div class="banner text-center">
       <img src="./assets/images/factorial_banner.png" />
     </div>
-    <div class="box">
-      <div class="container">
-        <div class="row text-center">
-          <label for="numberInput">INPUT:</label>
-          <input id="numberInput" type="text" name="numberInput" />
+    <div class="container">
+      <div class="statsBoxes">
+        <div class="leftBoxes">
+          <div class="commandBoxes">
+            <div class="box">
+              <div class="container">
+                <div>
+                  <label for="numberInput" class="text-center">INPUT</label>
+                </div>
+                <input id="numberInput" type="text" name="numberInput" />
+              </div>
+            </div>
+            <div class="box">
+              <div class="buttonHolder">
+                <img src="./assets/images/menu_selector_s.png" />
+                <div id="calculate">CALCULATE</div>
+              </div>
+              <div class="buttonHolder">
+                <img src="./assets/images/menu_selector_s.png" />
+                <div id="clear">CLEAR</div>
+              </div>
+            </div>
+          </div>
+          <div class="results box">
+            <div class="text-center">
+              <h2>RESULT</h2>
+              <div id="placeholder"></div>
+            </div>
+          </div>
         </div>
-        <img src="./assets/images/menu_selector_s.png" />
-        <div id="calculate">CALCULATE</div>
-        <img src="./assets/images/menu_selector_s.png" />
-        <div id="">CLEAR</div>
+        <div class="box rightBox">
+          <div>
+            <h2 class="text-center">FORMULA</h2>
+            <span id="userInput"></span> = <span id="mathematics"></span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="box">
-      <div class="text-center">
-        <h2 class="text-center">RESULT</h2>
-        <div id="placeholder"></div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="text-center">
-        <h2>FORMULA</h2>
-        <span id="userInput"></span> = <span id="mathematics"></span>
-      </div>
-    </div>
-    <div class="box">
-      <h1 class="text-center">FACTORIAL CALCULATOR</h1>
-      <p>
-        A factorial operation takes the product of all positive integers less
-        than or equal to a number (n), denoted as n!. Example:
-      </p>
-      <p>4! = 4 x 3 x 2 1 = 24</p>
-      <p>The theme of this design was inspired by Final Fantasy (NES)</p>
-    </div>
-    <div class="box">
-      <div>
-        <h2 class="text-center">INPUT RULES</h2>
-        <p>
-          - Must be a positive integer
-        </p>
-        <p>
-          - Cannot be greater than 170 otherwise will return "Infinity"
-        </p>
-        <p>- Decimals will be rounded to the nearest integer</p>
+      <div class="explanationBoxes">
+        <div class="box">
+          <h1 class="text-center">FACTORIAL CALCULATOR</h1>
+          <p>
+            A factorial operation takes the product of all positive integers
+            less than or equal to a number (n), denoted as n!. Example:
+          </p>
+          <p>4! = 4 x 3 x 2 1 = 24</p>
+          <p>
+            The design for this calculator was inspired by the NES game "Final
+            Fantasy"
+          </p>
+        </div>
+        <div class="box">
+          <div>
+            <h2 class="text-center">INPUT RULES</h2>
+            <p>
+              - Must be a positive integer
+            </p>
+            <p>
+              - Cannot be greater than 170 otherwise will return "Infinity"
+            </p>
+            <p>- Decimals will be rounded to the nearest integer</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
