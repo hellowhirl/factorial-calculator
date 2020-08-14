@@ -1,5 +1,6 @@
 const path = require("path");
-const { merge } = require("webpack-merge");
+const HtmlWebPackPlugin = require("html-webpack-plugin"); // serve your webpack bundles (with hash file names)
+const { merge } = require("webpack-merge"); // allows us to merge configs with "webpack.common.js"
 const common = require("./webpack.common");
 
 module.exports = merge(common, {
@@ -14,4 +15,25 @@ module.exports = merge(common, {
     open: true,
     hot: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/, // regex that catches any file ending in "scss"
+        // take not that order is reversed here
+        use: [
+          // we don't extract into CSS file in dev because it takes a while to change those files
+          "style-loader", // 3 inject styles into DOM
+          "css-loader", // 2. turns css into CommonJS
+          "sass-loader", // 1. turns sass into css
+        ],
+      },
+    ],
+  },
+  // plugins is an array that contains as many plugins as we want
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./src/template.html",
+      // filename: "./index.html", // this is default name anyway
+    }),
+  ],
 });
