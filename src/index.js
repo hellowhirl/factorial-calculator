@@ -1,8 +1,9 @@
-import _ from "lodash";
-// we didn't use export defualt so we need to use specific name in curly brackets
 import "./main.scss";
 import { handleClick } from "./utils/handleClick";
+import { handleClear } from "./utils/handleClear";
 
 const calculateButton = document.getElementById("calculate");
+const clearButton = document.getElementById("clearButton");
 
 calculateButton.addEventListener("click", handleClick);
+clearButton.addEventListener("click", handleClear);

@@ -15,6 +15,9 @@ span,
 div {
   font-family: "B612 Mono", monospace;
   font-size: 1.3rem;
+  @media (max-width: 500px) {
+    font-size: 1.1rem;
+  }
 }
 
 .banner {
@@ -53,11 +56,23 @@ label {
 }
 
 .buttonHolder {
+  position: relative;
   padding-bottom: 5px;
+  cursor: pointer;
+
+  &:hover {
+    > img {
+      left: -31px;
+    }
+  }
 
   #calculate,
   #clear {
     display: inline;
+  }
+  img {
+    position: absolute;
+    left: -40px;
   }
 }
 
@@ -76,12 +91,18 @@ label {
       display: block;
     }
     .box {
+      &:first-child {
+        margin-right: 20px;
+        @media (max-width: 500px) {
+          margin-right: auto;
+        }
+      }
       @media (max-width: 500px) {
         margin: 5px auto 20px;
       }
     }
   }
-  .results {
+  .result {
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
@@ -89,7 +110,7 @@ label {
       justify-content: center;
     }
     .box {
-      width: 400px;
+      width: 370px;
       min-height: 109px;
       @media (max-width: 991px) {
         width: 100%;
