@@ -18,6 +18,6 @@ export const handleClick = () => {
     factoring += i !== integer ? i + " x " : i;
   }
 
-  document.getElementById("userInput").innerHTML = `${integer}!`;
+  document.getElementById("userInput").innerHTML = `${integer}! = `;
   document.getElementById("mathematics").innerHTML = factoring;
 };

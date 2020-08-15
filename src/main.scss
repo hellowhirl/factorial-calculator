@@ -23,8 +23,6 @@ div {
 
 .box {
   display: table;
-  // min-width: 240px;
-  // max-width: 500px;
   margin: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -38,16 +36,19 @@ label {
   display: block;
 }
 
-.commandBoxes {
+.statsBoxes {
   display: flex;
-
-  .box {
-    width: 50%;
+  @media (max-width: 768px) {
+    display: block;
   }
 }
 
-.statsBoxes {
+.commandBoxes {
   display: flex;
+  justify-content: flex-end;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .inputBox {
@@ -55,7 +56,13 @@ label {
 }
 
 .results {
+  display: flex;
+  justify-content: flex-end;
   margin: 0 auto;
+  .box {
+    width: 400px;
+    min-height: 109px;
+  }
 }
 
 .buttonHolder {
@@ -72,7 +79,8 @@ label {
 }
 
 .rightBox {
-  width: 50%;
+  width: 400px;
+  min-height: 109px;
 }
 
 #numberInput {
