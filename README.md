@@ -4,8 +4,9 @@
 
 ### Summary
 
-This is a Final Fantasy I themed factorial calculator. See GitHub pages link:
-https://hellowhirl.github.io/factorial-calculator/
+This is a Final Fantasy I themed factorial calculator.
+
+See GitHub pages link: https://hellowhirl.github.io/factorial-calculator/
 
 ### What is a factorial?
 

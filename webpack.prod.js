@@ -11,7 +11,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "main.[hash].js", // this is also default webpack behavior
-    path: path.resolve(__dirname, "dist"), // resolves an absolute path to the "dist" directory (not hard coded)
+    path: path.resolve(__dirname, "docs"), // resolves an absolute path to the "dist" directory (not hard coded)
   },
   optimization: {
     // only minifying in production
