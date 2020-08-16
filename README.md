@@ -1,21 +1,23 @@
 # factorial-calculator
 
-## Summary
+<img src="./readme_images/final_factorial_banner_red.png" width="500">
 
-Decimals will be rounded to the nearest integer
+### Summary
 
-Example:
+This is a Final Fantasy I themed factorial calculator. See GitHub pages link:
+https://hellowhirl.github.io/factorial-calculator/
 
-Input: 6 [ Calculate ]
+### What is a factorial?
 
-Formula:
+A factorial operation takes the product of all positive integers less than or equal to a number (n), denoted as n!.
+
+### Example:
+
 6! = 1 x 2 x 3 x 4 x 5 x 6
 
-Result:
-720
+- Result = 720
 
-What is a factoriaL?
--explanation
+=====================================
 
 ## Available Scripts
 
