@@ -147,4 +147,17 @@ label {
   @media (max-width: 767px) {
     display: block;
   }
+
+  .box:first-child {
+    width: 60%;
+    @media (max-width: 767px) {
+      width: auto;
+    }
+  }
+  .box:nth-child(2) {
+    width: 40%;
+    @media (max-width: 767px) {
+      width: auto;
+    }
+  }
 }
