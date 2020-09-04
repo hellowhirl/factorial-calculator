@@ -20,7 +20,12 @@
                 <div>
                   <label for="numberInput" class="text-center">INPUT</label>
                 </div>
-                <input id="numberInput" type="text" name="numberInput" />
+                <input
+                  id="numberInput"
+                  type="text"
+                  name="numberInput"
+                  maxlength="3"
+                />
               </div>
             </div>
             <div class="box">
@@ -64,12 +69,8 @@
         <div class="box">
           <div>
             <h2 class="text-center">INPUT RULES</h2>
-            <p>
-              - Must be a positive integer
-            </p>
-            <p>
-              - Cannot be greater than 170 otherwise will return "Infinity"
-            </p>
+            <p>- Must be a positive integer</p>
+            <p>- Cannot be greater than 170 otherwise will return "Infinity"</p>
             <p>- Decimals will be rounded to the nearest integer</p>
           </div>
         </div>
