@@ -9,7 +9,7 @@ numberInput.addEventListener("keyup", function (event) {
 
 export const handleClick = () => {
   const integer = Math.round(numberInput.value);
-  if (integer <= 200) {
+  if (integer <= 200 && integer >= 0) {
     const result = calculateFactorial(integer);
     document.getElementById("placeholder").innerHTML = result;
 
@@ -20,6 +20,24 @@ export const handleClick = () => {
 
     document.getElementById("userInput").innerHTML = `${integer}! = `;
     document.getElementById("mathematics").innerHTML = factoring;
-  } else
-    document.getElementById("placeholder").innerHTML = "INPUT is too large";
+    return;
+  }
+  if (integer < 0) {
+    document.getElementById("placeholder").innerHTML =
+      'INPUT must be an integer greater than or equal to "0"';
+    document.getElementById("userInput").innerHTML = `${integer}! = `;
+    document.getElementById("mathematics").innerHTML = null;
+    return;
+  }
+  if (integer > 200) {
+    document.getElementById("placeholder").innerHTML = "Infinity";
+    document.getElementById(
+      "userInput"
+    ).innerHTML = `${integer}! = INPUT is too large`;
+    document.getElementById("mathematics").innerHTML = null;
+    return;
+  } else document.getElementById("userInput").innerHTML = `invalid INPUT`;
+  document.getElementById("placeholder").innerHTML =
+    'INPUT must be an integer greater than or equal to "0" dude';
+  document.getElementById("mathematics").innerHTML = null;
 };
